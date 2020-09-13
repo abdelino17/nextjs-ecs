@@ -51,6 +51,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: ext-uk-svc
+        service: next-uk-svc
         cluster: abtech-ecs
         wait-for-service-stability: true
